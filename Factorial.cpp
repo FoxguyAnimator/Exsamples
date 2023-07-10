@@ -14,8 +14,13 @@ int main()
         result = result * x;
         x--;
     }
-
-    cout << result << endl;
-
+    if(x < 0){
+        cout << "Incorrect input" << endl;
+    }
+    else{
+        cout << result << endl;
+    }
+    
     cin >> x;
 }
+
